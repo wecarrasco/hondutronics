@@ -1,0 +1,60 @@
+.header{
+  height: 95vh;
+  position: relative;
+
+
+  .izquierda{
+    height: 96vh;
+    position: relative;
+    width: 56%;
+    padding: 3rem;
+  }
+
+
+  &__logo-box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo{
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  &__text-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__botones{
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+    font-size: 2.5rem;
+    z-index: 9000;
+
+    &--mail{
+      // display: inline;
+      margin-left: 1.5rem;
+      cursor: pointer;
+      color: #222;
+      &>a{
+        &:visited{
+          color: #222;
+        }
+        &:link{
+          color:#222;
+        }
+      }
+    }
+    &--share{
+      // display: inline;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+}

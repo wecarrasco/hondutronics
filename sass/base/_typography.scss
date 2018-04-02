@@ -1,0 +1,76 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+
+
+  box-sizing: border-box;
+}
+
+.heading-primary{
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+  text-align: center;
+  color:$color-primary-dark;
+  padding: 4rem;
+
+  &--main{
+    display: block;
+    font-size: 2.5vw;
+    font-weight: 900;
+    letter-spacing: 2vw;
+    width: 100%;
+    margin-right: -2vw;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub{
+    display: block;
+    font-size: 1vw;
+    font-weight: 700;
+    // letter-spacing: 1rem;
+    letter-spacing: .5vw;
+    // width: 70rem;
+    // margin-right: -1rem;
+
+    animation: moveInRight 1s ease-out;
+  }
+
+  &--suscribe{
+    font-size: 4rem;
+    letter-spacing: .6rem;
+    text-align: center;
+  }
+}
+
+.texto{
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: #222;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  padding: 3rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+
+  // @include respond(tab-land){
+  //     width: 40%;
+  // };
+
+  &-form{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #222;
+
+  }
+}

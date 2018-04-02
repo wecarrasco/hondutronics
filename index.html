@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hondutronics - Home</title>
+  <meta name="description" content="Hondutronics Home Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
+</head>
+<body>
+
+  <div class="pin" id="pin">
+    <form action="#" class="form">
+      <div class="u-margin-bottom-medium">
+        <h2 class="heading-primary--suscribe">
+          Suscribete
+        </h2>
+        <div class="texto-form">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+      </div>
+      <div class="form__group">
+        <input type="text" id="name" class="form__input" placeholder="Nombre completo" required>
+        <label for="name" class="form__label">Nombre completo</label>
+      </div>
+      <div class="form__group">
+        <input type="text" id="numero" class="form__input" placeholder="Numero de telefono" required>
+        <label for="name" class="form__label">Numero de telefono</label>
+      </div>
+      <div class="form__group">
+        <input type="email" id="email" class="form__input" placeholder="Correo" required>
+        <label for="email" class="form__label">Correo</label>
+      </div>
+      <div class="form__group">
+        <button class="btn btn--green btn-suscribe">Suscribete &rarr;</button>
+      </div>
+    </form>
+  </div>
+
+  <header class="header" id="home">
+    <div class="izquierda">
+      <div class="header__logo-box">
+        <span class="header__logo">Hondutronics</span>
+      </div>
+      <div class="header__botones">
+        <div class="header__botones--share">
+          <!-- <i class="fas fa-share-alt shareButton"></i> -->
+
+          <input type="checkbox" class="menu__trigger" id="menu-trigger"/>
+
+          <div class="menu">
+            <label for="menu-trigger" class="menu_btn">
+              <i class="menu__btn-icon fas fa-share-alt shareButton"></i>
+            </label>
+            <div class="menu__list">
+              <div class="menu__item">
+                <label for="menu-trigger" class="menu__link correo">
+                  <a href="mailto:waemcame@gmail.com">
+                    <i class="menu__icon fas fa-envelope mailButton"></i>
+                  </a>
+                </label>
+                <span class="menu__tip">Envianos un correo</span>
+              </div>
+              <div class="menu__item">
+                <label for="menu-trigger" class="menu__link face" data-mobile-iframe="true" data-size="small" data-href="https://wecarrasco.github.io/hondutronic">
+                  <a class="fb-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwecarrasco.github.io%2Fhondutronic&amp;src=sdkpreparse">
+                    <i class="menu__icon fab fa-facebook-f"></i>
+                  </a>
+                </label>
+                <span class="menu__tip">Compartir en Facebook</span>
+              </div>
+              <div class="menu__item">
+                <label for="menu-trigger" class="menu__link twitter">
+                  <i class="menu__icon fab fa-twitter"></i>
+                </label>
+                <span class="menu__tip">Compartir en Twitter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="header__text-box heading-primary">
+      <h1 class="heading-primary--main">Hondutronics</h1>
+      <h2 class="heading-primary--sub">La casa inteligente a tu alcance</h2>
+    </div>
+    <div class="texto">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="menu">
+      <ul class="menu-ul row">
+        <li class="col-1-of-3"><a href="#">Sobre nosotros</a></li>
+        <li class="col-1-of-3"><a href="#">El equipo</a></li>
+        <li class="col-1-of-3"><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="scroll demo">
+      <a href="#section1" class="scrollDown"><span></span>Scroll</a>
+    </div>
+
+  </div>
+  <!-- <div class="derecha col-1-of-2">
+
+</div> -->
+</header>
+<main>
+  <section class="section1" id="section1">
+    <div class="section1__primero section1--sub">
+      <img class="section--img" src="./img/bombillos.jpg" alt="4 bombillos, uno encendido">
+      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="scroll demo">
+      <a href="#section2" class="scrollDown"><span></span>Scroll</a>
+    </div>
+  </section>
+  <section class="section2" id="section2">
+    <div class="section2__primero section2--sub">
+      <img class="section--img" src="./img/factura.jpg" alt="4 bombillos, uno encendido">
+      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="scroll demo">
+      <a href="#section3" class="scrollDown"><span></span>Scroll</a>
+    </div>
+  </section>
+  <section class="section3" id="section3">
+    <div class="section3__primero section3--sub">
+      <img class="section--img img-1" src="./img/laptop.jpg" alt="4 bombillos, uno encendido">
+      <img class="section--img img-2" src="./img/tablet.jpg" alt="4 bombillos, uno encendido">
+      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="scroll demo">
+      <a href="#section4" class="scrollDown"><span></span>Scroll</a>
+    </div>
+  </section>
+  <section class="section4" id="section4">
+    <div class="section4__primero section4--sub">
+      <img class="section--img" src="./img/barco.jpg" alt="4 bombillos, uno encendido">
+      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+
+  <div class="row">
+    <p class="footer__copyright">
+      Imagenes creadas por <a class="footer__link" href="https://www.freepik.es/fotos-vectores-gratis/negocios">Dooder - Freepik.com</a>
+    </p>
+    <p class="footer__copyright">
+      Pagina construida por <a href="#" class="footer__link">Walther Carrasco</a>
+    </p>
+    <div class="col-1-of-2">
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#home" class="footer__link">Hondutronics</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://hondurasdigitalchallenge.com/" class="footer__link">Honduras Digital Challenge 2018</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+const dev = false;
+if (dev) {
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-116675796-1','auto');ga('send','pageview');
+  }
+  </script>
+  <script type="text/javascript">
+  //config vars
+  const lagAmount = 50;
+  const maxSpeed = 100;
+  const frameRate = 20;
+  const selector = '.pin';
+  //code
+  let scrollTop = 0;
+  let pinTop = 0;
+  let lastTime;
+  const updatePinPosition = (time) => {
+    if (!lastTime)
+    lastTime = time;
+    let delta = time - lastTime;
+    if (delta >= frameRate){
+      scrollTop = $(window).scrollTop();
+      var move = (scrollTop - pinTop) * delta / (lagAmount + delta);
+      var direction = move === 0 ? 0 : move / Math.abs(move);
+      pinTop = pinTop + Math.min( Math.abs(move), maxSpeed ) * direction;
+      $(selector).css('transform', `translateY(${-move}px`)
+      lastTime = time;
+    }
+    requestAnimationFrame(updatePinPosition);
+  }
+  requestAnimationFrame(updatePinPosition);
+  </script>
+  <script type="text/javascript">
+  $(function() {
+    $('.scrollDown').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=268967586841780&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.fb-share').click(function(e) {
+      e.preventDefault();
+      window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+      return false;
+    });
+  });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".btn-suscribe").click(function(event){
+        event.preventDefault();
+        const name = $("#name").val();
+        const numero = $("#numero").val();
+        const email = $("#email").val();
+        if(email != ""){
+          axios.post("https://dondecomemos-suscribe.herokuapp.com/v1/agregar", {nombre: name, numero:numero, correo: email}).then(function(res){
+            swal(
+              'Muchas gracias!',
+              'Nosotros te avisaremos cuando hayan nuevas noticias',
+              'success'
+            )
+
+
+            $("#name").val("");
+            $("#numero").val("");
+            $("#email").val("");
+          })
+        }else{
+          swal({
+            type: 'error',
+            title: 'Oops...',
+            text: 'Debes escribir al menos tu correo'
+          })
+        }
+      })
+    })
+  </script>
+</body>
+</html>
