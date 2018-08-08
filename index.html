@@ -1,283 +1,965 @@
-<!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Hondutronics - Home</title>
-  <meta name="description" content="Hondutronics Home Page">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="honduras, hondutronics, automatizacion, casa, inteligente">
+  <meta name="description" content="Paquetes personalizados para brindarte la automatización de tu casa al alcance de tu mano.">
+  <meta name="author" content="">
+  <title>Hondutronics</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i|Roboto:500,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- Plugins -->
+  <!-- Venobox Lightbox slider -->
+  <link rel="stylesheet" href="css/venobox.css">
+  <!-- Slick Slider-->
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <!-- AOS Animate -->
+  <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
 
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
+  <!-- <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/tweet.74fa68560b68d64af1aa1acaf8b7e29a.js"></script> -->
 </head>
-<body>
 
-  <div class="pin" id="pin">
-    <form action="#" class="form">
-      <div class="u-margin-bottom-medium">
-        <h2 class="heading-primary--suscribe">
-          Suscribete
-        </h2>
-        <div class="texto-form">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-      </div>
-      <div class="form__group">
-        <input type="text" id="name" class="form__input" placeholder="Nombre completo" required>
-        <label for="name" class="form__label">Nombre completo</label>
-      </div>
-      <div class="form__group">
-        <input type="text" id="numero" class="form__input" placeholder="Numero de telefono" required>
-        <label for="name" class="form__label">Numero de telefono</label>
-      </div>
-      <div class="form__group">
-        <input type="email" id="email" class="form__input" placeholder="Correo" required>
-        <label for="email" class="form__label">Correo</label>
-      </div>
-      <div class="form__group">
-        <button class="btn btn--green btn-suscribe">Suscribete &rarr;</button>
-      </div>
-    </form>
+<body class="pace-done" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+  <div class="pace  pace-inactive">
+    <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
   </div>
 
-  <header class="header" id="home">
-    <div class="izquierda">
-      <div class="header__logo-box">
-        <span class="header__logo">Hondutronics</span>
+  <!-- Navigation -->
+  <div id="menu_area" class="menu-area fixed-top">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Hondutronics
+            <!-- <img src="images/logo.png" class="logo" alt="" height="60">-->
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Paquetes </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#webinars">Webinars</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a href="index.html">Home Page 1</a>
+                  </li>
+                  <li>
+                    <a href="home2.html">Home Page 2</a>
+                  </li>
+                  <li>
+                    <a href="home3.html">Home Page 3</a>
+                  </li>
+                  <li>
+                    <a href="home4.html">Home Page 4</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="blog-single.html">Blog Single</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="btn btn-secondary text-white btn-round btn-nav" data-toggle="modal" data-target="#signup-modal">Signup</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-shadow  text-white btn-round btn-nav" data-toggle="modal" data-target="#signin-modal">Comprar</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <div class="header__botones">
-        <div class="header__botones--share">
-          <!-- <i class="fas fa-share-alt shareButton"></i> -->
+    </div>
+  </div>
+  <!-- /Navigation -->
 
-          <input type="checkbox" class="menu__trigger" id="menu-trigger"/>
+  <!-- Header -->
+  <header class="fixed-top-added">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-7">
+          <div class="hero-content">
+            <h1 class="text-primary">La casa inteligente a tu alcance</h1>
+            <p class="text-primary mt-3"> La automatización de tu casa al alcance de tu mano. Ofrecemos paquetes de servicios personalizados y ajustados
+              a tus gustos y necesidades.
+            </p>
+            <ul class="pair-btns-list">
+              <li>
+                <a href="#" class="cbtn btn-grad btn-shadow btn-width">Cotizar</a>
+              </li>
+              <li>
+                <a class="cbtn btn-grad-s btn-shadow btn-width venobox vbox-item video-play" data-autoplay="true" data-vbtype="video" href="https://youtu.be/amFsNcXekUM?t=6s">Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <img src="images/casa2.svg" alt="" class="hero-img img-fluid cs-fade-in-up">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
 
-          <div class="menu">
-            <label for="menu-trigger" class="menu_btn">
-              <i class="menu__btn-icon fas fa-share-alt shareButton"></i>
-            </label>
-            <div class="menu__list">
-              <div class="menu__item">
-                <label for="menu-trigger" class="menu__link correo">
-                  <a href="mailto:waemcame@gmail.com">
-                    <i class="menu__icon fas fa-envelope mailButton"></i>
-                  </a>
-                </label>
-                <span class="menu__tip">Envianos un correo</span>
+  <!-- Material Pills <Start> -->
+  <div class="bg-gray py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">¿Por qué automatizar?</h1>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quae corrupti neque animi laboriosam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="nav nav-pills material-pills nav-border-tabs nav-fill" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="cs-pills-one-tab" data-toggle="pill" href="#cs-pills-one" role="tab" aria-controls="cs-pills-one"
+                aria-selected="true">Lorem ipsum
+                <br> dolor sit amet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cs-pills-two-tab" data-toggle="pill" href="#cs-pills-two" role="tab" aria-controls="cs-pills-two"
+                aria-selected="false">Lorem ipsum
+                <br> dolor sit amet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cs-pills-three-tab" data-toggle="pill" href="#cs-pills-three" role="tab" aria-controls="cs-pills-three"
+                aria-selected="false">Lorem ipsum
+                <br> dolor sit amet</a>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cs-pills-five-tab" data-toggle="pill" href="#cs-pills-five" role="tab" aria-controls="cs-pills-five"
+                aria-selected="false">Lorem ipsum
+                <br> dolor sit amet</a>
+            </li>
+          </ul>
+          <div class="tab-content mt-5" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="cs-pills-one" role="tabpanel" aria-labelledby="cs-pills-one-tab">
+              <!-- Tab Content -->
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="material-pills-text r-text">
+                    <h4 class="text-primary">Controla tu casa</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem, itaque unde facilis dignissimos
+                      inventore iure recusandae sed molestiae sint maxime iste eveniet culpa autem quo eius quibusdam doloremque
+                      eos!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                  <img src="images/Recurso3.png" class="img-fluid aos-init primerimagen" alt="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                </div>
               </div>
-              <div class="menu__item">
-                <label for="menu-trigger" class="menu__link face" data-mobile-iframe="true" data-size="small" data-href="https://wecarrasco.github.io/hondutronic">
-                  <a class="fb-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwecarrasco.github.io%2Fhondutronic&amp;src=sdkpreparse">
-                    <i class="menu__icon fab fa-facebook-f"></i>
-                  </a>
-                </label>
-                <span class="menu__tip">Compartir en Facebook</span>
+              <!-- /Tab Content -->
+            </div>
+            <div class="tab-pane fade" id="cs-pills-two" role="tabpanel" aria-labelledby="cs-pills-two-tab">
+              <!-- Tab Content -->
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/Recurso2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-6">
+                  <div class="material-pills-text">
+                    <h4 class="text-primary">Lorem ipsum asfs geasf</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos libero accusamus sit eaque quas
+                      explicabo quisquam commodi ex iurm.</p>
+                    <h4 class="text-primary">Lorem, ipsum dolor sit</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos libero accusamus sit eaque quas
+                      explicabo quisquam commodi ex iurm.</p>
+                  </div>
+                </div>
               </div>
-              <div class="menu__item">
-                <label for="menu-trigger" class="menu__link twitter">
-                  <i class="menu__icon fab fa-twitter"></i>
-                </label>
-                <span class="menu__tip">Compartir en Twitter</span>
+              <!-- /Tab Content -->
+            </div>
+            <div class="tab-pane fade" id="cs-pills-three" role="tabpanel" aria-labelledby="cs-pills-three-tab">
+              <!-- Tab Content -->
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="material-pills-text">
+                    <h4 class="text-primary">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem, itaque unde facilis dignissimos
+                      inventore iure recusandae sed molestiae sint maxime iste eveniet culpa autem quo eius quibusdam doloremque
+                      eos!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                  <img src="images/insteon.jpeg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <!-- /Tab Content -->
+            </div>
+            <div class="tab-pane fade" id="cs-pills-five" role="tabpanel" aria-labelledby="cs-pills-five-tab">
+              <!-- Tab Content -->
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <div class="material-pills-text">
+                    <h4 class="text-primary">Lorem ipsum dolor sit amet</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem, itaque unde facilis dignissimos
+                      inventore iure recusandae sed molestiae sint maxime iste eveniet culpa autem quo eius quibusdam doloremque
+                      eos!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 ">
+                  <img src="images/Recurso3.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <!-- /Tab Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Material Pills </End> -->
+
+  <!-- Media Call Action <Start> -->
+  <div class="bg-gray">
+    <div class="container">
+      <div class="call-action-media">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="media">
+              <div class="media-left">
+                <img src="images/call-down.svg" alt="img" class="img-fluid" width="90"> </div>
+              <div class="media-body">
+                <h3 class="text-primary">¿Quieres ver una casa inteligente en vivo?</h3>
+                <p class="call-action-media-text">Registrate y nosotros te haremos saber cuándo y dónde será el próximo Open House.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mt-4">
+              <a href="#" class="cbtn btn-grad btn-width btn-round">Registrarse</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Media Call Action </End> -->
+
+  <!-- Features -->
+  <div class="bg-gray py-80" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">Beneficios</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <!-- InfoBox Left  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+            <img src="images/icn1.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Left </End> -->
+        </div>
+        <div class="col-md-4">
+          <!-- InfoBox Center  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+            <img src="images/icn2.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Center </End> -->
+        </div>
+        <div class="col-md-4">
+          <!-- InfoBox Center  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1400">
+            <img src="images/icn3.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Center </End> -->
+        </div>
+        <div class="col-md-4">
+          <!-- InfoBox Center  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
+            <img src="images/icn4.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Center </End> -->
+        </div>
+        <div class="col-md-4">
+          <!-- InfoBox Center  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
+            <img src="images/icn5.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Center </End> -->
+        </div>
+        <div class="col-md-4">
+          <!-- InfoBox Center  <Start> -->
+          <div class="cs-infobox-left mt-4 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <img src="images/icn6.svg" alt="" class="img-fluid">
+            <h4 class="text-primary">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi doloribus
+              aut veritatis sit velit.</p>
+          </div>
+          <!-- InfoBox Center </End> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Features -->
+
+  <!-- Video Block & Testimonials -->
+  <div class="py-80 bg-gray">
+    <div class="box-shadow custom-witdth-box">
+      <div class="floated-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <a class="venobox vbox-item video-play" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=izEHi0apJmA">
+                <img src="images/squad.jpeg" alt="" class="img-fluid">
+                <div class="vid-fixed-icn">
+                  <img src="images/video-thumb.png" alt="" class="img-fluid">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="slider single-item slick-initialized slick-slider slick-dotted">
+                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" aria-disabled="false" style="display: block;">Previous</button>
+                <div class="slick-list draggable">
+                  <div class="slick-track" style="opacity: 1; width: 2790px; transform: translate3d(-930px, 0px, 0px);">
+                    <div class="slider-item slick-slide" data-slick-index="0" aria-hidden="true" style="width: 930px;" tabindex="-1" role="tabpanel"
+                      id="slick-slide00" aria-describedby="slick-slide-control00">
+                      <div class="testimonial-default">
+                        <div class="testimonial-default-img">
+                          <img src="images/female-75.jpg" alt="" class="center-block img-fluid">
+                        </div>
+                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica,
+                          pronunciation plu sommun paroles.”</h4>
+                        <h5>Arturo Machado - Hondutronics CEO</h5>
+                      </div>
+                    </div>
+                    <div class="slider-item slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 930px;"
+                      tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+                      <div class="testimonial-default">
+                        <div class="testimonial-default-img">
+                          <img src="images/Arturo.jpg" alt="" class="center-block img-fluid">
+                        </div>
+                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica,
+                          pronunciation plu sommun paroles.”</h4>
+                        <h5>Arturo Machado - Hondutronics CEO</h5>
+                      </div>
+                    </div>
+                    <div class="slider-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 930px;" tabindex="-1" role="tabpanel"
+                      id="slick-slide02" aria-describedby="slick-slide-control02">
+                      <div class="testimonial-default">
+                        <div class="testimonial-default-img">
+                          <img src="images/29.jpg" alt="" class="center-block img-fluid">
+                        </div>
+                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica,
+                          pronunciation plu sommun paroles.”</h4>
+                        <h5>Martin Loyola - HR at SofTech</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false">Next</button>
+                <ul class="slick-dots" style="display: block;" role="tablist">
+                  <li class="" role="presentation">
+                    <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button>
+                  </li>
+                  <li role="presentation" class="slick-active">
+                    <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0"
+                      aria-selected="true">2</button>
+                  </li>
+                  <li role="presentation" class="">
+                    <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <div class="header__text-box heading-primary">
-      <h1 class="heading-primary--main">Hondutronics</h1>
-      <h2 class="heading-primary--sub">La casa inteligente a tu alcance</h2>
-    </div>
-    <div class="texto">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-    <div class="menu">
-      <ul class="menu-ul row">
-        <li class="col-1-of-3"><a href="#">Sobre nosotros</a></li>
-        <li class="col-1-of-3"><a href="#">El equipo</a></li>
-        <li class="col-1-of-3"><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="scroll demo">
-      <a href="#section1" class="scrollDown"><span></span>Scroll</a>
-    </div>
-
-  </div>
-  <!-- <div class="derecha col-1-of-2">
-
-</div> -->
-</header>
-<main>
-  <section class="section1" id="section1">
-    <div class="section1__primero section1--sub">
-      <img class="section--img" src="./img/bombillos.jpg" alt="4 bombillos, uno encendido">
-      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="scroll demo">
-      <a href="#section2" class="scrollDown"><span></span>Scroll</a>
-    </div>
-  </section>
-  <section class="section2" id="section2">
-    <div class="section2__primero section2--sub">
-      <img class="section--img" src="./img/factura.jpg" alt="4 bombillos, uno encendido">
-      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="scroll demo">
-      <a href="#section3" class="scrollDown"><span></span>Scroll</a>
-    </div>
-  </section>
-  <section class="section3" id="section3">
-    <div class="section3__primero section3--sub">
-      <img class="section--img img-1" src="./img/laptop.jpg" alt="4 bombillos, uno encendido">
-      <img class="section--img img-2" src="./img/tablet.jpg" alt="4 bombillos, uno encendido">
-      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="scroll demo">
-      <a href="#section4" class="scrollDown"><span></span>Scroll</a>
-    </div>
-  </section>
-  <section class="section4" id="section4">
-    <div class="section4__primero section4--sub">
-      <img class="section--img" src="./img/barco.jpg" alt="4 bombillos, uno encendido">
-      <p class="section--texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-
-  <div class="row">
-    <p class="footer__copyright">
-      Imagenes creadas por <a class="footer__link" href="https://www.freepik.es/fotos-vectores-gratis/negocios">Dooder - Freepik.com</a>
-    </p>
-    <p class="footer__copyright">
-      Pagina construida por <a href="#" class="footer__link">Walther Carrasco</a>
-    </p>
-    <div class="col-1-of-2">
-      <div class="footer__navigation">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#home" class="footer__link">Hondutronics</a>
-          </li>
-          <li class="footer__item">
-            <a href="https://hondurasdigitalchallenge.com/" class="footer__link">Honduras Digital Challenge 2018</a>
-          </li>
-
-        </ul>
       </div>
     </div>
   </div>
-</footer>
+  <!-- /Video Block & Testimonials -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <!-- Price Tables -->
+  <div class="py-80" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">El mejor paquete para tí</h1>
+            <p>Encuentra el paquete que más se acomode a tus necesidades.</p>
+          </div>
+          <!-- <ul class="nav nav-pills justify-content-center nav-pills-group" id="pills-tab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab2" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home2"
+                aria-selected="true">Monthly</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2"
+                aria-selected="false">Yearly</a>
+            </li>
+          </ul> -->
+          <div class="tab-content" id="pills-tabContent2">
+            <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab2">
+              <!-- Tab Content -->
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="cs-price-card-info">
+                      <h5>Tu Cuarto</h5>
+                      <h1>
+                        <sup>$</sup>177
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 HUB</li>
+                        <li>2 Focos Inteligentes</li>
+                        <li>Aplicación móvil</li>
+                        <li>Atención personalizada</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Comprar</a>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Personalizar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+                    <div class="cs-price-card-info btn-grad">
+                      <h5 class="text-white">Tu Casa</h5>
+                      <h1 class="text-white">
+                        <sup>$</sup>282
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 HUB</li>
+                        <li>2 Focos Inteligentes</li>
+                        <li>2 Toma Corrientes Inteligentes</li>
+                        <li>Aplicación Móvil</li>
+                        <li>Atención personalizada</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="cbtn btn-grad btn-round btn-sm">Comprar</a>
+                        <a href="#" class="cbtn btn-grad btn-round btn-sm">Personalizar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5 aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
+                    <div class="cs-price-card-info">
+                      <h5>Tu Negocio</h5>
+                      <h1>
+                        <sup>$</sup>378
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 HUB</li>
+                        <li>3 Focos Inteligentes</li>
+                        <li>3 Toma Corrientes Inteligentes</li>
+                        <li>Aplicación Móvil</li>
+                        <li>Atención Personalizada</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Comprar</a>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Personalizar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+              </div>
+              <!-- /Tab Content -->
+            </div>
+            <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
+              <!-- Tab2 Content -->
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5">
+                    <div class="cs-price-card-info">
+                      <h5>Silver</h5>
+                      <h1>
+                        <sup>$</sup>40.00
+                        <small>Month</small>
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 - 5 Users</li>
+                        <li>5 GB Upload Size</li>
+                        <li>Full Customer Support</li>
+                        <li class="in-active">Free Updates</li>
+                        <li class="in-active">Maximum Protection</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5">
+                    <div class="cs-price-card-info btn-grad">
+                      <h5 class="text-white">Diamond</h5>
+                      <h1 class="text-white">
+                        <sup>$</sup>212.00
+                        <small>Month</small>
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 - 5 Users</li>
+                        <li>5 GB Upload Size</li>
+                        <li>Full Customer Support</li>
+                        <li>Free Updates</li>
+                        <li class="in-active">Maximum Protection</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="btn btn-primary btn-round btn-sm">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Price-Box  <Start> -->
+                  <div class="cs-price-card mt-5">
+                    <div class="cs-price-card-info">
+                      <h5>Gold</h5>
+                      <h1>
+                        <sup>$</sup>128.00
+                        <small>Month</small>
+                      </h1>
+                    </div>
+                    <div class="cs-price-card-content">
+                      <ul class="cs-price-card-features">
+                        <li>1 - 5 Users</li>
+                        <li>5 GB Upload Size</li>
+                        <li>Full Customer Support</li>
+                        <li>Free Updates</li>
+                        <li>Maximum Protection</li>
+                      </ul>
+                      <div>
+                        <a href="#" class="btn btn-light btn-round btn-sm">Get Started</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Price-Box </End> -->
+                </div>
+              </div>
+              <!-- /Tab2 Content -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    </div>
+  </div>
+  <!-- /Price Tables -->
 
-<script>
-const dev = false;
-if (dev) {
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-116675796-1','auto');ga('send','pageview');
-  }
-  </script>
-  <script type="text/javascript">
-  //config vars
-  const lagAmount = 50;
-  const maxSpeed = 100;
-  const frameRate = 20;
-  const selector = '.pin';
-  //code
-  let scrollTop = 0;
-  let pinTop = 0;
-  let lastTime;
-  const updatePinPosition = (time) => {
-    if (!lastTime)
-    lastTime = time;
-    let delta = time - lastTime;
-    if (delta >= frameRate){
-      scrollTop = $(window).scrollTop();
-      var move = (scrollTop - pinTop) * delta / (lagAmount + delta);
-      var direction = move === 0 ? 0 : move / Math.abs(move);
-      pinTop = pinTop + Math.min( Math.abs(move), maxSpeed ) * direction;
-      $(selector).css('transform', `translateY(${-move}px`)
-      lastTime = time;
-    }
-    requestAnimationFrame(updatePinPosition);
-  }
-  requestAnimationFrame(updatePinPosition);
-  </script>
-  <script type="text/javascript">
-  $(function() {
-    $('.scrollDown').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
+  <!-- Twitter widgets -->
+  <!-- <div class=" bg-gray py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">What our users say</h1>
+            <p>With CRM, your team can now use AI-based lead scoring.</p>
+          </div>
+        </div>
+      </div>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=268967586841780&autoLogAppEvents=1';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $('.fb-share').click(function(e) {
-      e.preventDefault();
-      window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
-      return false;
-    });
-  });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".btn-suscribe").click(function(event){
-        event.preventDefault();
-        const name = $("#name").val();
-        const numero = $("#numero").val();
-        const email = $("#email").val();
-        if(email != ""){
-          axios.post("https://dondecomemos-suscribe.herokuapp.com/v1/agregar", {nombre: name, numero:numero, correo: email}).then(function(res){
-            swal(
-              'Muchas gracias!',
-              'Nosotros te avisaremos cuando hayan nuevas noticias',
-              'success'
-            )
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="embed-tweet-item">
+            <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered"
+              style="position: static; visibility: visible; display: block; width: 550px; height: 279.15px; padding: 0px; border: medium none; margin: 10px auto; max-width: 100%; min-width: 220px;"
+              data-tweet-id="988494146628448257" title="Twitter Tweet" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-tweet-item">
+            <iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered"
+              style="position: static; visibility: visible; display: block; width: 550px; height: 259.55px; padding: 0px; border: medium none; margin: 10px auto; max-width: 100%; min-width: 220px;"
+              data-tweet-id="965995722129764353" title="Twitter Tweet" frameborder="0"></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="embed-tweet-item">
+            <iframe id="twitter-widget-2" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered"
+              style="position: static; visibility: visible; display: block; width: 550px; height: 299.15px; padding: 0px; border: medium none; margin: 10px auto; max-width: 100%; min-width: 220px;"
+              data-tweet-id="984811026544713728" title="Twitter Tweet" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- /Twitter widgets -->
+
+  <!-- Partners -->
+  <div class="py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">Asociados a las mejores marcas</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <ul class="partners-horiz-list clearfix justify-content-center">
+            <li class="partners-horiz-item aos-init" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+              <img src="images/partners/p1.png" class="img-fluid partner-img" alt="partner">
+            </li>
+            <li class="partners-horiz-item aos-init" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <img src="images/partners/p2.png" class="img-fluid partner-img" alt="partner">
+            </li>
+            <li class="partners-horiz-item aos-init" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+              <img src="images/partners/p3.png" class="img-fluid partner-img" alt="partner">
+            </li>
+            <!-- <li class="partners-horiz-item aos-init" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
+              <img src="images/partners/p4.png" class="img-fluid partner-img partner4" alt="partner">
+            </li>
+            <li class="partners-horiz-item aos-init" data-aos="flip-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1900">
+              <img src="images/partners/p5.png" class="img-fluid partner-img" alt="partner">
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Partners-->
+
+  <!-- Webinars -->
+  <div class="bg-gray py-80" id="webinars">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-head text-center">
+            <h1 class="text-primary">Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia minima non pariatur similique eum consequatur
+              laborum sapiente libero!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Webnair Card  <Start> -->
+          <div class="card cs-webnair-card aos-init" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <h4 class="card-title text-primary">¿Qué es la domótica?</h4>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem commodi fugit rem.</p>
+              <div class="media">
+                <img class="mr-3" src="images/Monse.jpeg" width="50 " height="50 ">
+                <div class="media-body ">
+                  <h5>
+                    <small>Escrito por</small> Monserrat Machado</h5>
+                  Hondutronics
+                </div>
+              </div>
+
+            </div>
+            <div class="card-actions ">
+              <div class="row ">
+                <div class="col-sm-6 ">
+                  <div class="webnair-date ">
+                    <h5>Abril</h5>
+                    <h2>18</h2>
+                  </div>
+                </div>
+                <div class="col-sm-6 ">
+                  <div class="my-4 text-center ">
+                    <a href="# " class="btn btn-primary btn-round ">Leer
+                      <i class="fa fa-long-arrow-right "></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Webnair Card </End> -->
+        </div>
+        <div class="col-md-6 ">
+          <!-- Webnair Card  <Start> -->
+          <div class="card cs-webnair-card aos-init " data-aos="fade-up " data-aos-anchor-placement="top-bottom
+                  " data-aos-duration="1500 ">
+            <div class="card-body ">
+              <h4 class="card-title text-primary ">¿Por qué debería automatizar mi casa?</h4>
+              <p class="card-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem commodi fugit rem.</p>
+              <div class="media ">
+                <img class="mr-3 " src="images/Sessya.jpeg" alt="image " width="50 " height="50 ">
+                <div class="media-body ">
+                  <h5>
+                    <small>Escrito por</small> Sessya Cruz</h5>
+                  Hondutronics
+                </div>
+              </div>
+
+            </div>
+            <div class="card-actions ">
+              <div class="row ">
+                <div class="col-sm-6 ">
+                  <div class="webnair-date ">
+                    <h5>Enero</h5>
+                    <h2>25</h2>
+                  </div>
+                </div>
+                <div class="col-sm-6 ">
+                  <div class="my-4 text-center ">
+                    <a href="# " class="btn btn-primary btn-round ">Leer
+                      <i class="fa fa-long-arrow-right "></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Webnair Card </End> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Webinars -->
+
+  <!-- Call Action - Primary<Start> -->
+  <div class="call-action-primary py-80 ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-sm-12 ">
+          <div class="call-action-primary-content text-center ">
+            <h1 class="text-white mb-3 call-action-head ">¿Quieres estár pendiente de actualizaciones y nuevos productos?</h1>
+            <p class="text-white call-action-text ">Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues
+              differe solmen in li grammatica</p>
+
+            <form class="mt-5 ">
+              <div class="input-group call-action-primary-search ">
+                <input class="form-control call-action-primary-input " placeholder="Correo " aria-label="Recipient 's username" aria-describedby="basic-addon2"
+                  type="text">
+                <div class="input-group-append">
+                  <button type="submit" class="call-action-primary-btn ">Suscribirse</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Call Action - Primary</End> -->
+
+  <!-- Animated Dots -->
+  <div class="dots">
+    <div class="dot one"></div>
+    <div class="dot two"></div>
+    <div class="dot three"></div>
+    <div class="dot four"></div>
+    <div class="dot five"></div>
+    <div class="dot six"></div>
+    <div class="dot seven"></div>
+    <div class="dot eight"></div>
+    <div class="dot nine"></div>
+    <div class="dot ten"></div>
+  </div>
+  <!-- Animated Dots -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <h4 class="footer-head">Hondutronics</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#" title="Link">Paquetes</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Terminos y Condiciones</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Politica de Privacidad</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+          <h4 class="footer-head">Useful Links</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#" title="Link">License</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Press Resources</a>
+            </li>
+            <li>
+              <a href="#" title="Link">API</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Open Source</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Download</a>
+            </li>
+          </ul>
+        </div> -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <h4 class="footer-head">Empresa</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#" title="Link">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="#" title="Link">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <h4 class="footer-head">Contactanos</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#" title="Link">hondutronics.sac@gmail.com</a>
+            </li>
+            <li>
+              <a href="#" title="Link">www.hondutronics.com</a>
+            </li>
+          </ul>
+          <h4 class="footer-head">Siguenos</h4>
+          <ul class="footer-share-it">
+            <li class="shate-it-item">
+              <a href="#" class="btn btn-share-sm bg-facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="shate-it-item">
+              <a href="#" class="btn btn-share-sm bg-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="shate-it-item">
+              <a href="#" class="btn btn-share-sm bg-google">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-bar clearfix">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="mt-0 mb-0 text-primary">Hondutronics</h1>
+          </div>
+          <div class="col-lg-6">
+            <div class="copy-text">© 2018 Hondutronics. Todos los derechos reservados.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-            $("#name").val("");
-            $("#numero").val("");
-            $("#email").val("");
-          })
-        }else{
-          swal({
-            type: 'error',
-            title: 'Oops...',
-            text: 'Debes escribir al menos tu correo'
-          })
-        }
-      })
-    })
-  </script>
+  <!-- Back to Top -->
+  <a href="#0" class="cd-top js-cd-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <!-- Back to Top ends-->
+
+  <!-- <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script> -->
+  <!-- <script src="js/jquery-2.2.4.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/pace.min.js"></script>
+  <!-- Plugins -->
+  <script src="js/back-to-top.js"></script>
+  <!-- Venobox Lightbox slider -->
+  <script src="js/venobox.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="js/slick/slick.js"></script>
+  <!-- AOS Animate -->
+  <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
+  <script src="js/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+
+
+
+  <!-- <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.cb6df5c11eb74c4885e17101a777cb60.html?origin=https%3A%2F%2Fdemos.ohdearui.com&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings"
+    title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe>
+  <iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;"
+    title="Twitter analytics iframe" frameborder="0"></iframe> -->
 </body>
+
 </html>
