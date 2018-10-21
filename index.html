@@ -1033,8 +1033,8 @@
           producto: formValues[3]
         }
 
-        // axios.post('https://hondutronicsbackend.herokuapp.com/registrar', payload)
-        axios.post('http://localhost:8000/registrar', payload)
+        axios.post('https://hondutronicsbackend.herokuapp.com/registrar', payload)
+          // axios.post('http://localhost:8000/registrar', payload)
           .then(function (response) {
             swal(
               'Registrado!',
