@@ -36,6 +36,12 @@
     gtag('config', 'UA-126684845-1');
   </script>
 
+  <!-- <script src="js/sweetalert2.all.min.js"></script> -->
+  <script src="js/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <!-- <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/tweet.74fa68560b68d64af1aa1acaf8b7e29a.js"></script> -->
 </head>
@@ -127,7 +133,7 @@
             </p>
             <ul class="pair-btns-list">
               <li>
-                <a href="#" class="cbtn btn-grad btn-shadow btn-width">Cotizar</a>
+                <a href="#" onclick="myFunction()" class="cbtn btn-grad btn-shadow btn-width">Cotizar</a>
               </li>
               <li>
                 <a class="cbtn btn-grad-s btn-shadow btn-width venobox vbox-item video-play" data-autoplay="true"
@@ -1000,6 +1006,47 @@
   <!-- Custom JS -->
   <script src="js/main.js"></script>
 
+  <script>
+    async function myFunction() {
+      const { value: formValues } = await swal({
+        title: 'Register',
+        html:
+          'Nombre: <input id="swal-input1" placeholder="Walther" class="swal2-input">' +
+          'Correo: <input id="swal-input2" placeholder="walther@hondutronics.com" class="swal2-input">' +
+          'Numero de Celular: <input id="swal-input3" placeholder="99668899" class="swal2-input">' +
+          'Productos: <input id="swal-input4" placeholder="Foco" class="swal2-input">',
+        focusConfirm: false,
+        preConfirm: () => {
+          return [
+            document.getElementById('swal-input1').value,
+            document.getElementById('swal-input2').value,
+            document.getElementById('swal-input3').value,
+            document.getElementById('swal-input4').value
+          ]
+        }
+      })
+      if (formValues) {
+        const payload = {
+          nombre: formValues[0],
+          correo: formValues[1],
+          numero: formValues[2],
+          producto: formValues[3]
+        }
+
+        // axios.post('https://hondutronicsbackend.herokuapp.com/registrar', payload)
+        axios.post('http://localhost:8000/registrar', payload)
+          .then(function (response) {
+            swal(
+              'Registrado!',
+              'Muchas gracias por registrarse, le escribiremos lo mas pronto posible.',
+              'success'
+            )
+          })
+
+
+      }
+    }
+  </script>
 
 
 
