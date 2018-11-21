@@ -63,8 +63,8 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Hondutronics
-            <!-- <img src="images/logo.png" class="logo" alt="" height="60">-->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/LogoTransparente.png" class="logo" alt="Hondutronics" height="60">
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -133,7 +133,7 @@
             </p>
             <ul class="pair-btns-list">
               <li>
-                <a href="#" onclick="myFunction()" class="cbtn btn-grad btn-shadow btn-width">Cotizar</a>
+                <a href="#" onclick="cotizar()" class="cbtn btn-grad btn-shadow btn-width">Cotizar</a>
               </li>
               <li>
                 <a class="cbtn btn-grad-s btn-shadow btn-width venobox vbox-item video-play" data-autoplay="true"
@@ -338,9 +338,8 @@
             data-aos-duration="1400">
             <img src="images/icn3.svg" alt="" class="img-fluid">
             <h4 class="text-primary">Seguridad</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi
-              doloribus
-              aut veritatis sit velit.</p>
+            <p>Desde cámaras de video hasta sensores de movimiento inteligentes, tu espacio será un lugar más
+              seguro con nuestros productos y servicios</p>
           </div>
           <!-- InfoBox Center </End> -->
         </div>
@@ -350,9 +349,8 @@
             data-aos-duration="1600">
             <img src="images/icn4.svg" alt="" class="img-fluid">
             <h4 class="text-primary">Eleva tu comodidad</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi
-              doloribus
-              aut veritatis sit velit.</p>
+            <p>Nunca dejarás tu lámpara o tu plancha encendida. Maneja tu espacio desde cualquier lado del
+              mundo a solo un toque de distancia.</p>
           </div>
           <!-- InfoBox Center </End> -->
         </div>
@@ -362,9 +360,8 @@
             data-aos-duration="1800">
             <img src="images/icn5.svg" alt="" class="img-fluid">
             <h4 class="text-primary">Simulador de energía</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi
-              doloribus
-              aut veritatis sit velit.</p>
+            <p>Consulta, de forma real e inmediata, el consumo energético de todos tus productos inteligentes en
+              comparación con aparatos tradicionales</p>
           </div>
           <!-- InfoBox Center </End> -->
         </div>
@@ -374,9 +371,8 @@
             data-aos-duration="2000">
             <img src="images/icn6.svg" alt="" class="img-fluid">
             <h4 class="text-primary">Ahorro</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex porro aperiam eum debitis itaque sequi
-              doloribus
-              aut veritatis sit velit.</p>
+            <p>¿Te imaginas reducir en un 30% tu gasto de energía eléctrica? Con nuestros paquetes de
+              productos puedes lograrlo</p>
           </div>
           <!-- InfoBox Center </End> -->
         </div>
@@ -392,7 +388,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <a class="venobox vbox-item video-play" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=izEHi0apJmA">
+              <a class="venobox vbox-item video-play" data-autoplay="true" data-vbtype="video" href="https://youtu.be/xxU1OK3YqwA">
                 <img src="images/squad.jpeg" alt="" class="img-fluid">
                 <div class="vid-fixed-icn">
                   <img src="images/video-thumb.png" alt="" class="img-fluid">
@@ -412,9 +408,8 @@
                         <div class="testimonial-default-img">
                           <img src="images/female-75.jpg" alt="" class="center-block img-fluid">
                         </div>
-                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform
-                          grammatica,
-                          pronunciation plu sommun paroles.”</h4>
+                        <h4>“El caos inicial dentro de un emprendimiento es el desastre más hermoso que puedes
+                          experimentar en tu vida”</h4>
                         <h5>Arturo Machado - Hondutronics CEO</h5>
                       </div>
                     </div>
@@ -424,9 +419,8 @@
                         <div class="testimonial-default-img">
                           <img src="images/Arturo.jpg" alt="" class="center-block img-fluid">
                         </div>
-                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform
-                          grammatica,
-                          pronunciation plu sommun paroles.”</h4>
+                        <h4>“El caos inicial dentro de un emprendimiento es el desastre más hermoso que puedes
+                          experimentar en tu vida”</h4>
                         <h5>Arturo Machado - Hondutronics CEO</h5>
                       </div>
                     </div>
@@ -436,9 +430,8 @@
                         <div class="testimonial-default-img">
                           <img src="images/29.jpg" alt="" class="center-block img-fluid">
                         </div>
-                        <h4>“On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform
-                          grammatica,
-                          pronunciation plu sommun paroles.”</h4>
+                        <h4>“El caos inicial dentro de un emprendimiento es el desastre más hermoso que puedes
+                          experimentar en tu vida”</h4>
                         <h5>Martin Loyola - HR at SofTech</h5>
                       </div>
                     </div>
@@ -1007,34 +1000,54 @@
   <script src="js/main.js"></script>
 
   <script>
-    async function myFunction() {
-      const { value: formValues } = await swal({
-        title: 'Registro',
-        html:
+    async function cotizar() {
+      let vals;
+      let page = 1;
+      const {value: formValues} = await swal.mixin({
+        confirmButtonText: 'Next &rarr;',
+        showCancelButton: true,
+        progressSteps: ['1', '2', '3'],
+        preConfirm:()=>{
+          if(page===1){
+            page++;
+          }else if(page === 2){
+            vals = [document.getElementById('swal-input1').value,
+            document.getElementById('swal-input2').value,
+            document.getElementById('swal-input3').value]
+            page++;
+          }else{
+            vals.push(document.getElementById('swal-input4').value)
+          }
+        }
+      }).queue([
+        {
+          title: 'Nuestros Productos',
+          html: 
+          '<p>Antes de realizar una cotización, por favor revísa nuestro catálogo de productos.</p>'+
+          '<a href="https://drive.google.com/open?id=1qIkBJpzprvb6mkpNmU8gZT8aULsQkKLI" target="_blank">Ver Catalogo</a>'
+        },{
+          title: 'Registro',
+          html:
           'Nombre: <input id="swal-input1" placeholder="Walther" class="swal2-input">' +
           'Correo: <input id="swal-input2" placeholder="walther@hondutronics.com" class="swal2-input">' +
-          'Numero de Celular: <input id="swal-input3" placeholder="99668899" class="swal2-input">' +
-          'Productos: <input id="swal-input4" placeholder="Foco" class="swal2-input">',
-        focusConfirm: false,
-        preConfirm: () => {
-          return [
-            document.getElementById('swal-input1').value,
-            document.getElementById('swal-input2').value,
-            document.getElementById('swal-input3').value,
-            document.getElementById('swal-input4').value
-          ]
+          'Numero de Celular: <input id="swal-input3" placeholder="99668899" class="swal2-input">'
+        },{
+          title: 'Solucion de Problemas',
+          text: 'Nosotros nos caracterizamos por solucionarte los problemas de tu casa. Cuentanos, hay algun problema en el que te podriasmo ayudar?',
+          html: 
+          '<p>Nosotros nos caracterizamos por solucionarte los problemas de tu casa. Cuentanos, hay algun problema en el que te podriasmo ayudar?</p>'+
+          '<textarea rows="3" cols"50" id="swal-input4" placeholder="Quiero que mi arbol de navidad se encienda y apague automaticamente." class="swal2-textarea">'
         }
-      })
-      if (formValues) {
+      ]).then(()=>{
+        console.log(vals)
         const payload = {
-          nombre: formValues[0],
-          correo: formValues[1],
-          numero: formValues[2],
-          producto: formValues[3]
+          nombre: vals[0],
+          numero: vals[1],
+          correo: vals[2],
+          producto: vals[3]
         }
 
         axios.post('https://hondutronicsbackend.herokuapp.com/registrar', payload)
-          // axios.post('http://localhost:8000/registrar', payload)
           .then(function (response) {
             swal(
               'Registrado!',
@@ -1043,8 +1056,50 @@
             )
           })
 
+        // swal(
+        //   'Registrado!',
+        //   'Muchas gracias por registrarse, le escribiremos lo mas pronto posible.',
+        //   'success'
+        // )
+      })
 
-      }
+      // const { value: formValues } = await swal({
+      //   title: 'Registro',
+      //   html:
+      //     'Nombre: <input id="swal-input1" placeholder="Walther" class="swal2-input">' +
+      //     'Correo: <input id="swal-input2" placeholder="walther@hondutronics.com" class="swal2-input">' +
+      //     'Numero de Celular: <input id="swal-input3" placeholder="99668899" class="swal2-input">' +
+      //     'Productos: <input id="swal-input4" placeholder="Foco" class="swal2-input">',
+      //   focusConfirm: false,
+        // preConfirm: () => {
+        //   return [
+            // document.getElementById('swal-input1').value,
+            // document.getElementById('swal-input2').value,
+            // document.getElementById('swal-input3').value,
+            // document.getElementById('swal-input4').value
+        //   ]
+        // }
+      // })
+      // if (formValues) {
+      //   const payload = {
+      //     nombre: formValues[0],
+      //     correo: formValues[1],
+      //     numero: formValues[2],
+      //     producto: formValues[3]
+      //   }
+
+      //   // axios.post('https://hondutronicsbackend.herokuapp.com/registrar', payload)
+        // axios.post('http://localhost:8000/registrar', payload)
+        //   .then(function (response) {
+        //     swal(
+        //       'Registrado!',
+        //       'Muchas gracias por registrarse, le escribiremos lo mas pronto posible.',
+        //       'success'
+        //     )
+        //   })
+
+
+      // }
     }
   </script>
 

@@ -39,6 +39,11 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
+.logo{
+  width: 120%;
+  height: 70px;
+}
+
 .heading-primary {
   text-transform: uppercase;
   margin-bottom: 6rem;
