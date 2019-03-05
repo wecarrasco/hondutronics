@@ -1395,3 +1395,7 @@ Dots
     margin-left: 150px;
   }
 }
+
+.slider{
+  height: 40% !important;
+}
